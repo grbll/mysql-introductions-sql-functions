@@ -9,9 +9,9 @@ INSERT INTO sessions (
 ) VALUES (1), (2);
 
 UPDATE sessions
-SET logout_time = CURRENT_IMESTAMP
-WHERE id = 1;
+SET logout_time = CURRENT_TIMESTAMP
+WHERE session_id = 1;
 
 UPDATE sessions
-SET logout_time = CURRENT_IMESTAMP
-WHERE id = 2;
+SET logout_time = CURRENT_TIMESTAMP
+WHERE session_id = 2;
